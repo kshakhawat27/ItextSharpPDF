@@ -1,0 +1,9 @@
+E:\Pakiza\DAY_ONE\DAY_ONE\bin\DAY_ONE.dll
+E:\Pakiza\DAY_ONE\DAY_ONE\bin\DAY_ONE.pdb
+E:\Pakiza\DAY_ONE\DAY_ONE\bin\EntityFramework.dll
+E:\Pakiza\DAY_ONE\DAY_ONE\bin\itextsharp.dll
+E:\Pakiza\DAY_ONE\DAY_ONE\bin\itextsharp.xmlworker.dll
+E:\Pakiza\DAY_ONE\DAY_ONE\bin\EntityFramework.xml
+E:\Pakiza\DAY_ONE\DAY_ONE\obj\Debug\DAY_ONE.dll
+E:\Pakiza\DAY_ONE\DAY_ONE\obj\Debug\DAY_ONE.pdb
+E:\Pakiza\DAY_ONE\DAY_ONE\obj\Debug\DAY_ONE.csprojResolveAssemblyReference.cache

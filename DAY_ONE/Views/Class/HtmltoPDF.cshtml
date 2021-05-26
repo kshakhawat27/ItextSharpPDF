@@ -1,0 +1,178 @@
+﻿@{
+    ViewBag.Title = "HtmltoPDF";
+}
+<html>
+<head>
+</head>
+<body>
+    <div id="Grid">
+        <style>
+            table
+            {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                background-color: white;
+            }
+            th
+            {
+                
+                padding: 8px;
+                color: Black;
+            }
+            td
+            {
+               
+                padding: 8px;
+                color: black;
+            }
+            tr
+            {
+            }
+            img
+            {
+                height: 20px;
+                width: 30px;
+            }
+            #testimg
+            {
+               
+            }
+            .testTable
+            {
+                width: 30%;
+                font-weight: bold;
+            }
+        </style>
+        @* <input type="text" id="GridHtml3" name="GridHtml7" />*@
+        <div>
+            <p style="text-align: center" >
+     
+            <img src="http://localhost:3367/UploadFile/Pakiza.png" alt=""; id="testimg"; runat="server"  replace>
+             <h2 style="text-align: Center; font-weight: bold">
+                Pakiza Technovation Limited
+            </h2>
+            </p>
+            <p style="text-align: right">
+                Kazi Shakhawat Hossain
+                <br />
+                Business Automation<br />
+                Pakiza Technovation Limited.
+            </p>
+            <h5 style="color: Black; text-align: center; font-weight: bold">
+                Company's Information
+            </h5>
+        </div>
+        <table border="1">
+            <tr style="background-color: #e8eef4">
+                <th>
+                    Company
+                </th>
+                <th>
+                    Contact
+                </th>
+                <th>
+                    Country
+                </th>
+            </tr>
+            <tr>
+                <td align="center">
+                     <img src="http://localhost:3367/UploadFile/Pakiza.png" class="test"alt="" height="100" width="120" align="middle" replace>
+                       
+                </td>
+                <td>
+                    Maria Anders
+                </td>
+                <td>
+                    Germany
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Centro comercial Moctezuma
+                </td>
+                <td>
+                    Francisco Chang
+                </td>
+                <td>
+                    Mexico
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ernst Handel
+                </td>
+                <td>
+                    Roland Mendel
+                </td>
+                <td>
+                    Austria
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Island Trading
+                </td>
+                <td>
+                    Helen Bennett
+                </td>
+                <td>
+                    UK
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Laughing Bacchus Winecellars
+                </td>
+                <td>
+                    Yoshi Tannamuri
+                </td>
+                <td>
+                    Canada
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Magazzini Alimentari Riuniti
+                </td>
+                <td>
+                    Giovanni Rovelli
+                </td>
+                <td>
+                    Italy
+                </td>
+            </tr>
+        </table>
+        <div>
+            <br />
+            <br />
+            <br />
+            <table class="testTable" style="text-align: center">
+                <tr style="background-color: #e8eef4">
+                    <td>
+                        Checked by
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Kazi Shakhawat Hossain
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+@using (Html.BeginForm("ExportPDF", "Class", FormMethod.Post))
+{
+    <input type="hidden" name="GridHtml2" />
+    <input type="submit" id="btnSubmit" value="Export2" />
+}
+<script>
+    $(function () {
+        $("#btnSubmit").click(function () {
+            $("input[name='GridHtml2']").val($("#Grid").html());
+            //            $("#GridHtml").val($("#Grid").html());
+        });
+    });
+</script>
