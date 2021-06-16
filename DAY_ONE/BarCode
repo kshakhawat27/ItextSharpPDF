@@ -1,0 +1,6 @@
+ Barcode39 bc39 = new Barcode39();
+                    bc39.Code = "1234";
+                    // comment next line to show barcode text
+                    //bc39.Font = null;
+                    doc.Add(bc39.CreateImageWithBarcode(cb, null, null));
+                  
